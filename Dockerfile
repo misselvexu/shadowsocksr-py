@@ -21,10 +21,10 @@ RUN apk --no-cache add python \
 
 
 RUN mkdir -p $WORK && \
-    wget -qO- --no-check-certificate https://github.com/shadowsocksr-backup/shadowsocksr/archive/$BRANCH.tar.gz | tar -xzf - -C $WORK
+    wget -qO- --no-check-certificate https://github.com/misselvexu/shadowsocksr-py/archive/$BRANCH.zip | tar -xzf - -C $WORK
 
 
-WORKDIR $WORK/shadowsocksr-$BRANCH/shadowsocks
+WORKDIR $WORK/shadowsocksr-py-$BRANCH/shadowsocks
 
 
 EXPOSE $SERVER_PORT
