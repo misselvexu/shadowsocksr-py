@@ -1,7 +1,7 @@
 ## ShadowsocksR Single User
 ### Install Libs
 
-#### centos
+#### CentOS
 ```
     yum install python-setuptools && easy_install pip
     yum install git
