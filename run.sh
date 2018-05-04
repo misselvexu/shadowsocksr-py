@@ -5,4 +5,3 @@ eval $(ps -ef | grep "[0-9] ${python_ver} server\\.py m" | awk '{print "kill -9 
 
 # ulimit -n 2048
 nohup ${python_ver} server.py m>> /dev/null 2>&1 &
-
